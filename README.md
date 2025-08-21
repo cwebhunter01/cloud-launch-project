@@ -1,4 +1,4 @@
-# CloudLaunch - AWS Cloud Deployment Project
+ # CloudLaunch - AWS Cloud Deployment Project
 
 ## Project Overview
 
@@ -19,6 +19,8 @@ The project implements a multi-tier architecture with:
 ### S3 Buckets Created
 
 #### 1. `cloudlaunch-site-bucket-public` (Public Website)
+
+![cloudfront](./screenshots/cloudfront.png )
 - **Purpose**: Hosts the static CloudLaunch company website
 - **Access**: Publicly readable (anonymous users)
 - **Features**: 
@@ -122,7 +124,7 @@ The project implements a multi-tier architecture with:
 ## Task 2: VPC Network Design
 
 ### VPC Architecture
-
+![vpc-architecture](./screenshots/vpc-preview.png)
 #### Core VPC: `cloudlaunch-vpc`
 - **CIDR Block**: `10.0.0.0/16`
 - **DNS Hostnames**: Enabled
@@ -178,7 +180,7 @@ The project implements a multi-tier architecture with:
 ---
 
 ## Access Information
-
+![User-created](./screenshots/users-created.png)
 ### AWS Console Access
 - **Console URL**: `arn:aws:iam::045491855546:user/cloudlaunch-user`
 - **Account ID**: `[cloudlaunch-user]`
@@ -237,7 +239,10 @@ cloudlaunch-assessment/
 │   ├── index.html                     # Main website page
 │   ├── styles.css                     # CSS styling
 │   └── error.html                     # 404 error page
- 
+├── screenshots
+    ├── cloudfront.png
+    ├── user-created.png
+    ├── vpc-architecture.png 
 ```
 
 ---
